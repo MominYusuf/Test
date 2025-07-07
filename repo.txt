@@ -1,0 +1,46 @@
+REPOSITORY BCKCHODI
+Microsoft Windows [Version 10.0.26100.4351]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\internship\nodejs>git init
+Initialized empty Git repository in D:/internship/nodejs/.git/
+
+D:\internship\nodejs>git add .
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+
+D:\internship\nodejs>git commit -m "initial commit"
+On branch master
+nothing to commit, working tree clean
+
+D:\internship\nodejs>git remote add origin https://github.com/MominYusuf/test.git
+
+D:\internship\nodejs>git branch -M main
+
+D:\internship\nodejs>git push -u origin main
+remote: Repository not found.
+fatal: repository 'https://github.com/MominYusuf/test.git/' not found
+
+D:\internship\nodejs>git remote set-url origin https://github.com/MominYusuf/tset
+
+D:\internship\nodejs>git push -u origin main
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 8.60 KiB | 1.72 MiB/s, done.
+Total 10 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/MominYusuf/tset
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+SQL
+ACID Properties-transaction control- cganges update delete
+Atomicity - Transaction Pass or Fails Rollback
+Consistancy - Operation Dataset
+Isolation - Operation in Isolation
+Durability - Data loss - Backups
+
+noSQL
+Models - Net
