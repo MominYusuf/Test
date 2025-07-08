@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+const path = require ('path')
 const mongoose = require('mongoose');
 
 mongoose
@@ -13,11 +13,12 @@ const Student = require('./models/students');
 // Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.set('view engine', 'ejs');
 
 // get/login route
 app.get("/login", (req, res) => {
-  return res.json({
-    message: "Hello from the server, this is the login page",
+  res.render('auth/login', {
+    isLogin: true
   });
 });
 

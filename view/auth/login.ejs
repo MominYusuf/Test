@@ -10,15 +10,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="LoginPage2.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
 
-    <div class="login-container">
+    <div class="login-container" >
         <h3 class="display-6 text-center">Login</h3>
         <hr style="color: #007bff;">
-        <form id="loginForm" novalidate>
+        <form id="loginForm" action="/login" method="post" >
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter email" required>
